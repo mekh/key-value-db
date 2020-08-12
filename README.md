@@ -37,6 +37,7 @@ $ docker-compose up --build
 
 Для запуска выполнить команду
 ```bash
+$ npm install
 $ npm run start
 ```
 
