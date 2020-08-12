@@ -1,0 +1,17 @@
+version: "3.2"
+services:
+  db:
+    container_name: key-value-db
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - type: bind
+        source: ./storage
+        target: /opt/app/storage
+    environment:
+      - LOG_LEVEL=trace
+      - AMPQ_URL=amqp://localhost:5672
+      - INCOME_QUEUE=db_in
+      - OUTCOME_QUEUE=db_out
+      - DB_PATH=./storage

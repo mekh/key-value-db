@@ -1,0 +1,32 @@
+{
+  "name": "a-line-digital",
+  "version": "0.0.1",
+  "description": "Simple key-value database",
+  "main": "index.js",
+  "engines": {
+    "node": ">=12.14.1"
+  },
+  "scripts": {
+    "start": "node service.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "key",
+    "value",
+    "database"
+  ],
+  "author": "Alexandr V.Mekh",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.20.0",
+    "jest": "^26.2.2",
+    "jest-each": "^26.3.0"
+  }
+}
